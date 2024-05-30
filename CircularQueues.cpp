@@ -87,4 +87,9 @@ public:
             cout << endl;
         }
     }
-};/
+};
+
+int main() {
+    queues q;
+    char ch;
+}
