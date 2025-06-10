@@ -60,3 +60,15 @@ public:
                 FRONT = FRONT + 1; // Geser FRONT ke kanan
         }
     }
+
+    void display() {
+        int FRONT_position = FRONT;
+        int REAR_position = REAR;
+
+        // Cek apakah queue kosong
+        if (FRONT == -1) {
+            cout << "queue is empty\n";
+            return;
+        }
+
+        cout << "\nelements in the queue are...\n";
