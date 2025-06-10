@@ -97,3 +97,7 @@ public:
         }
     }
 };
+
+int main() {
+    queues q;                   // Objek queue dibuat
+    char ch;
