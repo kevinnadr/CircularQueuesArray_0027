@@ -22,3 +22,9 @@ public:
             cout << "\nqueue overflow\n";
             return;
         }
+
+        // Cek apakah queue kosong
+        if (FRONT == -1) {
+            FRONT = 0;
+            REAR = 0;
+        }
