@@ -28,3 +28,12 @@ public:
             FRONT = 0;
             REAR = 0;
         }
+        else {
+            // Jika REAR di akhir array, kembali ke indeks 0 (circular)
+            if (REAR == max - 1)
+                REAR = 0;
+            else
+                REAR = REAR + 1;  // Geser REAR ke kanan
+        }
+        queue_array[REAR] = num;  // Masukkan elemen ke REAR
+    }
