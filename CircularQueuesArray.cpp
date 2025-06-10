@@ -101,3 +101,14 @@ public:
 int main() {
     queues q;                   // Objek queue dibuat
     char ch;
+
+    while (true) {              // Loop menu terus-menerus
+        try {
+            cout << "menu" << endl;
+            cout << "1. implement insert operation" << endl;
+            cout << "2. implement remove operation" << endl; 
+            cout << "3. display values" << endl;
+            cout << "4. exit" << endl;
+            cout << "enter your choice (1-4): ";
+            cin >> ch;
+            cout << endl;
