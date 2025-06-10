@@ -112,3 +112,37 @@ int main() {
             cout << "enter your choice (1-4): ";
             cin >> ch;
             cout << endl;
+
+            switch (ch) {
+                case '1': {
+                    q.insert();   // Panggil fungsi insert
+                    break;
+                }
+                case '2': {
+                    q.remove();   // Panggil fungsi remove
+                    break;
+                }
+                case '3': {
+                    q.display();  // Tampilkan queue
+                    break;
+                }
+                case '4': {
+                    return 0;     // Keluar program
+                }
+                case '5': {       // Tidak perlu ada case '5' karena hanya 1-4
+                    cout << "invalid option!!" << endl;
+                    break;
+                }
+                default: {
+                    cout << "invalid option!!" << endl; // Tangani input salah
+                    break;
+                }
+            }
+        }
+        catch (exception& e) {
+            cout << "check for the values entered." << endl; // Tangani exception
+        }
+    }
+
+    return 0;
+}
