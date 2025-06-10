@@ -37,3 +37,10 @@ public:
         }
         queue_array[REAR] = num;  // Masukkan elemen ke REAR
     }
+
+    void remove() {
+        // Cek apakah queue kosong
+        if (FRONT == -1) {
+            cout << "queue underflow\n";
+            return;
+        }
